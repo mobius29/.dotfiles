@@ -8,6 +8,6 @@ sudo apt install nodejs -y
 
 # cargo -> exa, fd-find
 sudo apt install cargo
-cargo install exa fd-find -y
+cargo install exa fd-find
 
 
