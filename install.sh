@@ -1,5 +1,5 @@
 sudo apt install git gcc g++ make curl -y
-sudo apt install phthon3 python3-pip python3-dev -y
+sudo apt install python3 python3-pip python3-dev -y
 sudo apt install neovim -y
 
 # nodejs (ver 16.x)
