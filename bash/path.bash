@@ -1,1 +1,1 @@
-export PATH=/home/sagjin0000/.cargo/bin:$PATH
+export PATH=/root/.cargo/bin:$PATH
