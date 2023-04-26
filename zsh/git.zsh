@@ -17,3 +17,13 @@ alias gfa="git fetch --all"
 gsa() {
 	git stash apply stash@{${1:-0}}
 }
+
+alias gpo="git pull origin"
+alias gpm="git pull origin main"
+alias gpms="git pull origin master"
+
+function gpcb() {
+	local cur_branch=$(git branch | grep \* | cut -d ' ' -f2)
+	
+	git push origin ${cur_branch}
+}

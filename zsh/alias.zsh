@@ -11,17 +11,12 @@ alias vimrc="vim ~/.vimrc"
 alias cmcpp="g++ main.cpp -o main --std=c++17"
 
 alias ndev="npm run dev"
+alias nbdev="npm run build:dev"
+alias ndevl="npm run dev:local"
 
-fzfStudy() {
+ffd() {
   local dir
-  dir=$(find ${1:-~/Desktop/Study} -path '*/\.*' -prune -maxdepth 3 \
-                  -o -type d -print 2> /dev/null | fzf +m) &&
-  cd "$dir"
-}
-
-fzfHome() {
-  local dir
-  dir=$(find ${1:-~/Desktop/Study} -path '*/\.*' -prune \
+  dir=$(find ${1:-~/Desktop} -path '*/\.*' -prune -maxdepth 4 \
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 }
