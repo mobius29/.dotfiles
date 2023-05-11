@@ -10,9 +10,11 @@ alias vimrc="vim ~/.vimrc"
 
 alias cmcpp="g++ main.cpp -o main --std=c++17"
 
-alias ndev="npm run dev"
-alias nbdev="npm run build:dev"
-alias ndevl="npm run dev:local"
+alias nrs="npm run start"
+alias nrd="npm run dev"
+alias nrb="npm run build"
+alias nrbd="npm run build:dev"
+alias nrdl="npm run dev:local"
 
 ffd() {
   local dir
