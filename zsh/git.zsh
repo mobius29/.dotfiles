@@ -15,6 +15,7 @@ alias gsp="git stash pop"
 
 alias gf="git fetch"
 alias gfa="git fetch --all"
+alias gfap="git fetch --all --prune"
 
 gsa() {
 	git stash apply stash@{${1:-0}}
