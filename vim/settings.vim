@@ -26,5 +26,6 @@ set title
 set showmatch
 set nowrap
 set bs=indent,eol,start
-syntax on
+syntax enable
 filetype indent on
+filetype plugin indent on
