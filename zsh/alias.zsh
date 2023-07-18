@@ -10,12 +10,6 @@ alias vimrc="vim ~/.vimrc"
 
 alias cmcpp="g++ main.cpp -o main --std=c++17"
 
-alias nrs="npm run start"
-alias nrd="npm run dev"
-alias nrb="npm run build"
-alias nrbd="npm run build:dev"
-alias nrdl="npm run dev:local"
-
 ffd() {
   local dir
   dir=$(find ${1:-~/Desktop} -path '*/\.*' -prune -maxdepth 4 \

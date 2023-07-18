@@ -11,3 +11,5 @@ alias ybd="yarn build:dev"
 alias yd="yarn dev"
 alias ys="yarn start"
 
+alias c.="code ."
+
