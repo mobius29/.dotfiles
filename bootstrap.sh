@@ -16,13 +16,13 @@ brew cask cleanup
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # link .zshrc
-[ ! -f $HOME/.zshrc ] && ln -nfs $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
+[ ! -f $HOME/.zshrc ] && ln -nfs $HOME/.dotfiles/cfg/.zshrc $HOME/.zshrc
 source $HOME/.zshrc
 
 # link .vimrc
+sudo ln -nfs $HOME/.dotfiles/cfg/.vimrc
 [ ! -d $HOME/.config || ! -d $HOME/.config/nvim ] && mkdir -p $HOME/.config/nvim
-[ ! -f $HOME/.config/nvim/init.vim ] && ln -nfs $HOME/.dotfiles/vim/.vimrc $HOME/.config/nvim/init.vim
-
+[ ! -f $HOME/.config/nvim/init.vim ] && ln -nfs $HOME/.dotfiles/cfg/.vimrc $HOME/.config/nvim/init.vim
 
 # install vimPlug
 [ ! -f $HOME/.local/share/nvim/site/autoload/plug.vim ] && sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
