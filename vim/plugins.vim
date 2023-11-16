@@ -13,7 +13,6 @@ call plug#begin()
 	Plug 'majutsushi/tagbar'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'mhinz/vim-signify'
-	Plug 'pangloss/vim-simplefold'
 	Plug 'pangloss/vim-javascript'
 	Plug 'leafgarland/typescript-vim'
 	Plug 'Quramy/vim-dtsm'
