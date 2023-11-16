@@ -7,4 +7,3 @@ source $DOTFILES_ZSH/path.zsh
 source $DOTFILES_ZSH/plugin.zsh
 source $DOTFILES_ZSH/develop.zsh
 source $DOTFILES_ZSH/tmux.zsh
-
