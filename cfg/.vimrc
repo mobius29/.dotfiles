@@ -1,4 +1,4 @@
-source ~/.dotfiles/vim/keymap.vim
-source ~/.dotfiles/vim/settings.vim
-source ~/.dotfiles/vim/plugins.vim
-source ~/.dotfiles/vim/ctrlp.vim
+source $HOME/.dotfiles/vim/keymap.vim
+source $HOME/.dotfiles/vim/settings.vim
+source $HOME/.dotfiles/vim/plugins.vim
+source $HOME/.dotfiles/vim/ctrlp.vim
