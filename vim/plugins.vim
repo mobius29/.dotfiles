@@ -13,10 +13,11 @@ call plug#begin()
 	Plug 'majutsushi/tagbar'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'mhinz/vim-signify'
-	Plug 'pangloss/vim-javascript'
-	Plug 'leafgarland/typescript-vim'
 	Plug 'Quramy/vim-dtsm'
 	Plug 'vim-syntastic/syntastic'
 	Plug 'diepm/vim-rest-console'
 	Plug 'haya14busa/incsearch.vim'
+
+	Plug 'SirVer/ultisnips'
+	Plug 'honza/vim-snippets'
 call plug#end()

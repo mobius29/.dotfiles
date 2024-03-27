@@ -11,6 +11,7 @@ set ts=4
 set shiftwidth=4
 set tabstop=4
 set wmnu
+set shiftwidth=2
 
 set ignorecase
 set hlsearch
