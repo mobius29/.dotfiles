@@ -30,3 +30,14 @@ set bs=indent,eol,start
 syntax enable
 filetype indent on
 filetype plugin indent on
+
+let g:indentguides_spacechar = '|'
+let g:indentguides_tabchar = '|'
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+

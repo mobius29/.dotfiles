@@ -12,8 +12,5 @@ alias cmcpp="g++ main.cpp -o main --std=c++17"
 alias cgr="cargo run"
 alias cgfmt="cargo fmt"
 
-ffd() {
-  local dir
-  dir=$(find ${1:-~/Desktop} -path '*/\.*' -prune -maxdepth 4 -o -type d -print 2> /dev/null | fzf +m)
-  cd "$dir"
-}
+alias ffd='findDirectory'
+alias search="searchInAllFiles"
