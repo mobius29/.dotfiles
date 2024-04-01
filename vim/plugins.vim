@@ -8,17 +8,25 @@ call plug#begin()
 	Plug 'tpope/vim-surround'
 	Plug 'scrooloose/nerdcommenter'
 	Plug 'chrisbra/NrrwRgn'
-	Plug 'majutsushi/tagbar'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'mhinz/vim-signify'
 	Plug 'Quramy/vim-dtsm'
 	Plug 'vim-syntastic/syntastic'
 	Plug 'diepm/vim-rest-console'
 	Plug 'haya14busa/incsearch.vim'
-	Plug 'preservim/nerdtree'
 	Plug 'thaerkh/vim-indentguides'
 
 	Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
+	Plug 'preservim/tagbar'
+
+	"fzf
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+
+	"nerdtree
+	Plug 'preservim/nerdtree'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
 
 	"javascript/typescript
 	Plug 'pangloss/vim-javascript'

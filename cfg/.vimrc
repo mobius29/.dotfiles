@@ -6,3 +6,4 @@ source $HOME/.dotfiles/vim/snippets.vim
 source $HOME/.dotfiles/vim/syntastic.vim
 source $HOME/.dotfiles/vim/terminal.vim
 source $HOME/.dotfiles/vim/coc.vim
+source $HOME/.dotfiles/vim/fzf.vim

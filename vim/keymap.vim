@@ -43,3 +43,10 @@ nnoremap <C-j> <ESC><C-w>j
 nnoremap <C-k> <ESC><C-w>k
 nnoremap <C-h> <ESC><C-w>h
 nnoremap <C-l> <ESC><C-w>l
+nnoremap <leader><C-v> <C-w>v
+
+nnoremap <leader>tb :TagbarToggle<CR>
+
+nnoremap <leader>fzf :FZF<CR>
+
+
