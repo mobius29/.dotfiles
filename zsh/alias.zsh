@@ -1,8 +1,9 @@
 alias cls="clear"
 alias sozsh="source ~/.zshrc"
 
-alias vim="nvim"
+alias v="nvim"
 alias vi="nvim"
+alias vim="nvim"
 alias vimdiff="nvim -d"
 
 alias zshrc="vim ~/.zshrc"
@@ -14,3 +15,4 @@ alias cgfmt="cargo fmt"
 
 alias ffd='findDirectory'
 alias search="searchInAllFiles"
+alias yz="yazi"
