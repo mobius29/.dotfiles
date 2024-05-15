@@ -1,3 +1,5 @@
+local cmp_nvim_lsp = require("cmp_nvim_lsp")
+
 ---@diagnostic disable:missing-fields
 return {
     {
@@ -16,6 +18,16 @@ return {
         opts = {
             ---@type lspconfig.options
             servers = {
+                clangd = {
+                    capabilities = {
+                        offsetEncoding = { "utf-16" },
+                    },
+                    settings = {
+                        clangd = {
+                            cmd = { "clangd", "offsetEncoding = utf-8" },
+                        },
+                    },
+                },
                 rust_analyzer = {},
                 tsserver = {},
             },
