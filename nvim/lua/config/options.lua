@@ -13,14 +13,13 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.cindent = true
-vim.opt.shiftwidth = 4 -- >>, << 시 이동하는 폭
+vim.opt.shiftwidth = 2 -- >>, << 시 이동하는 폭
 
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 vim.opt.expandtab = true -- tab을 space로 대체
 vim.opt.smarttab = true
 
 vim.opt.title = true
-vim.opt.number = true
 vim.opt.laststatus = 2 -- 항상 상태바 표시
 vim.opt.wrap = false
 vim.opt.ruler = true -- 화면 우측 하단에 커서 위치 표시
@@ -36,3 +35,6 @@ vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 
 vim.opt.bs = "eol,start,indent" -- 줄의 끝, 시작, 들여쓰기에서 백스페이스 시 이전 줄
+
+vim.opt.number = true
+vim.wo.relativenumber = true

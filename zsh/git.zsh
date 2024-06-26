@@ -24,3 +24,10 @@ alias gpms="git pull origin master"
 alias gmod="git merge origin/develop"
 
 alias gsq="gsq(){ git reset --soft HEAD~${1} && git commit }; noglob gsq"
+
+mergeWithoutFF(){
+  local targetBranch=$1
+  git merge --no-ff $targetBranch
+}
+
+alias gmnoff="mergeWithoutFF"

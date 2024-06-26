@@ -14,5 +14,4 @@ alias cgr="cargo run"
 alias cgfmt="cargo fmt"
 
 alias ffd='findDirectory'
-alias search="searchInAllFiles"
 alias yz="yazi"

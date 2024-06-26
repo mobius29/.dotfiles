@@ -8,80 +8,79 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
-    spec = {
-        -- add LazyVim and import its plugins
-        { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+  spec = {
+    -- add LazyVim and import its plugins
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
-        -- add Extras
-        { import = "lazyvim.plugins.extras.lang.rust" },
-        { import = "lazyvim.plugins.extras.lang.json" },
-        { import = "lazyvim.plugins.extras.lang.typescript" },
+    -- add Extras
+    { import = "lazyvim.plugins.extras.lang.rust" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
 
-        { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
 
-        { import = "lazyvim.plugins.extras.formatting.prettier" },
+    -- {
+    --   import = "lazyvim.plugins.extras.coding.copilot",
+    --   opts = {
+    --     suggestion = { enabled = true, auto_trigger = true, keymap = { accept = "<leader>c<CR>" } },
+    --     panel = {
+    --       enabled = true,
+    --       auto_refresh = false,
+    --       keymap = {
+    --         jump_prev = "[[",
+    --         jump_next = "]]",
+    --         accept = "<CR>",
+    --         refresh = "gr",
+    --         open = "<leader>co",
+    --       },
+    --       layout = {
+    --         position = "bottom", -- bottom | top | left | right
+    --         ratio = 0.4,
+    --       },
+    --     },
+    --     filetypes = {
+    --       typescript = true,
+    --       markdown = true,
+    --       help = true,
+    --     },
+    --   },
+    -- },
 
-        {
-            import = "lazyvim.plugins.extras.coding.copilot",
-            opts = {
-                suggestion = { enabled = true, auto_trigger = true, keymap = { accept = "<leader>c<CR>" } },
-                panel = {
-                    enabled = true,
-                    auto_refresh = false,
-                    keymap = {
-                        jump_prev = "[[",
-                        jump_next = "]]",
-                        accept = "<CR>",
-                        refresh = "gr",
-                        open = "<leader>co",
-                    },
-                    layout = {
-                        position = "bottom", -- bottom | top | left | right
-                        ratio = 0.4,
-                    },
-                },
-                filetypes = {
-                    typescript = true,
-                    markdown = true,
-                    help = true,
-                },
-            },
-        },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 
-        { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
-        { import = "lazyvim.plugins.extras.ui.mini-starter" },
-
-        -- import/override with your plugins
-        { import = "plugins" },
+    -- import/override with your plugins
+    { import = "plugins" },
+  },
+  defaults = {
+    -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
+    -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
+    lazy = false,
+    -- It's recommended to leave version=false for now, since a lot the plugin that support versioning,
+    -- have outdated releases, which may break your Neovim install.
+    version = false, -- always use the latest git commit
+    -- version = "*", -- try installing the latest stable version for plugins that support semver
+  },
+  install = { colorscheme = { "tokyonight" } },
+  checker = { enabled = true }, -- automatically check for plugin updates
+  performance = {
+    cache = { enabled = true },
+    rtp = {
+      -- disable some rtp plugins
+      disabled_plugins = {
+        "gzip",
+        -- "matchit",
+        -- "matchparen",
+        "netrwPlugin",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+      },
     },
-    defaults = {
-        -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
-        -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
-        lazy = false,
-        -- It's recommended to leave version=false for now, since a lot the plugin that support versioning,
-        -- have outdated releases, which may break your Neovim install.
-        version = false, -- always use the latest git commit
-        -- version = "*", -- try installing the latest stable version for plugins that support semver
-    },
-    install = { colorscheme = { "tokyonight" } },
-    checker = { enabled = true }, -- automatically check for plugin updates
-    performance = {
-        cache = { enabled = true },
-        rtp = {
-            -- disable some rtp plugins
-            disabled_plugins = {
-                "gzip",
-                -- "matchit",
-                -- "matchparen",
-                "netrwPlugin",
-                "tarPlugin",
-                "tohtml",
-                "tutor",
-                "zipPlugin",
-            },
-        },
-    },
+  },
 
-    debug = false,
+  debug = false,
 })
