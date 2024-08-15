@@ -12,45 +12,6 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
-    -- add Extras
-    { import = "lazyvim.plugins.extras.lang.rust" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.typescript" },
-
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
-
-    -- {
-    --   import = "lazyvim.plugins.extras.coding.copilot",
-    --   opts = {
-    --     suggestion = { enabled = true, auto_trigger = true, keymap = { accept = "<leader>c<CR>" } },
-    --     panel = {
-    --       enabled = true,
-    --       auto_refresh = false,
-    --       keymap = {
-    --         jump_prev = "[[",
-    --         jump_next = "]]",
-    --         accept = "<CR>",
-    --         refresh = "gr",
-    --         open = "<leader>co",
-    --       },
-    --       layout = {
-    --         position = "bottom", -- bottom | top | left | right
-    --         ratio = 0.4,
-    --       },
-    --     },
-    --     filetypes = {
-    --       typescript = true,
-    --       markdown = true,
-    --       help = true,
-    --     },
-    --   },
-    -- },
-
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-
-    { import = "lazyvim.plugins.extras.ui.mini-starter" },
-
     -- import/override with your plugins
     { import = "plugins" },
   },

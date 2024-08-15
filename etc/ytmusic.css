@@ -1,4 +1,4 @@
-yt-img-shadow  {
+yt-img-shadow {
   filter: blur(20px);
 }
 
@@ -11,14 +11,19 @@ ytmusic-player {
   width: 200px !important;
 }
 
+.ytmusic-player-page > .content {
+  overflow-y: scroll !important;
+}
+
 ytmusic-player-page > .content {
-	display: flex !important;
-	flex-direction: column !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 #side-panel {
   width: 100%;
   margin: auto auto;
+  overflow-y: scroll;
   scroll-snap-type-y: inherit;
 }
 

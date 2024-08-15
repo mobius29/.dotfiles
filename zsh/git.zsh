@@ -25,6 +25,9 @@ alias gmod="git merge origin/develop"
 
 alias gsq="gsq(){ git reset --soft HEAD~${1} && git commit }; noglob gsq"
 
+alias ghprc="gh pr create"
+alias ghisc="gh issue create"
+
 mergeWithoutFF(){
   local targetBranch=$1
   git merge --no-ff $targetBranch
