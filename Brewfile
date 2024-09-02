@@ -36,7 +36,6 @@ cask "rectangle"
 cask "webstorm"
 cask "writerside"
 
-
 mas "KakaoTalk", id: 869223134
 mas "Hidden bar", id: 1452453066
 mas "RunCat", id: 1429033973
