@@ -1,21 +1,26 @@
+require("tokyonight")
+
 return {
   {
     "folke/tokyonight.nvim",
+    ---@class tokyonight.Config
     opts = {
-      style = "moon",
       priority = 999,
       transparent = true,
       terminal_colors = false,
-
       styles = {
         sidebars = "transparent",
         floats = "transparent",
-
         comments = { fg = "#E6B9DE", italic = true },
         keywords = { fg = "#CAEDFF", italic = true },
         variables = { fg = "#F8E559", italic = true },
         functions = { fg = "#8B93FF", italic = true },
       },
+      on_colors = function(colors)
+        colors.bg_highlight = "#2e2e2e"
+        colors.fg_gutter = "#dddddd"
+      end,
+      cache = true,
     },
   },
 }
