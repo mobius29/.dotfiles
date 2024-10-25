@@ -8,5 +8,4 @@ source $DOTFILES_ZSH/git.zsh
 source $DOTFILES_ZSH/plugin.zsh
 source $DOTFILES_ZSH/develop.zsh
 source $DOTFILES_ZSH/tmux.zsh
-source $DOTFILES_ZSH/keys.zsh
 source $DOTFILES_ZSH/init.zsh
