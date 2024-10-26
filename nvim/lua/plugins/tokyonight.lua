@@ -16,10 +16,7 @@ return {
         variables = { fg = "#F8E559", italic = true },
         functions = { fg = "#8B93FF", italic = true },
       },
-      on_colors = function(colors)
-        colors.bg_highlight = "#2e2e2e"
-        colors.fg_gutter = "#dddddd"
-      end,
+      on_colors = function(colors) end,
       cache = true,
     },
   },
