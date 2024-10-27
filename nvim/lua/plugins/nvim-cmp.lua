@@ -3,8 +3,8 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-emoji",
-      "saadparwaiz1/cmp_luasnip", -- LuaSnip과의 통합을 위한 플러그인 추가
-      "L3MON4D3/LuaSnip", -- LuaSnip 스니펫 엔진 추가
+      "saadparwaiz1/cmp_luasnip",
+      "L3MON4D3/LuaSnip",
     },
     opts = function(_, opts)
       -- Copilot 소스 추가
