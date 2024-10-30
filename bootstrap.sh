@@ -16,5 +16,5 @@ brew cask cleanup
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # link .zshrc
-ln -nfs "$HOME"/.dotfiles/cfg/.zshrc "$HOME"/.zshrc
-source "$HOME"/.zshrc
+ln -nfs "$HOME"/.dotfiles/.zshrc "$HOME"/.zshrc
+. "$HOME"/.zshrc
