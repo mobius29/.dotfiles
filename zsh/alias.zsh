@@ -15,3 +15,6 @@ alias cgfmt="cargo fmt"
 
 alias ffd='findDirectory'
 alias yz="yazi"
+
+alias els='exa -l'
+alias ela='exa -la'
