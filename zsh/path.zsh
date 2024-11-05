@@ -25,6 +25,13 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# fnm
+FNM_PATH="/Users/sj_ly00/Library/Application Support/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/Users/sj_ly00/Library/Application Support/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
 # rust
 source "$HOME/.cargo/env"
 
