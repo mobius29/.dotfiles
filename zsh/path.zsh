@@ -18,7 +18,7 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/Users/seongjin/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -26,7 +26,7 @@ esac
 # pnpm end
 
 # fnm
-FNM_PATH="/Users/sj_ly00/Library/Application Support/fnm"
+FNM_PATH="$HOME/Library/Application Support/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="/Users/sj_ly00/Library/Application Support/fnm:$PATH"
   eval "`fnm env`"
