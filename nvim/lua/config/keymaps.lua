@@ -4,7 +4,7 @@
 
 local map = vim.keymap.set
 local opts = function(desc)
-    return { desc = desc, remap = true, silent = true }
+  return { desc = desc, remap = true, silent = true }
 end
 
 -- Esc
