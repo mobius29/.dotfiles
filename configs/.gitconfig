@@ -5,6 +5,13 @@
   pager = delta
   fsmonitor = true
   untrackedCache = true
+  excludeFiles = ~/.gitignore
+
+[transfer]
+  fsckobjects = true
+
+[receive]
+  fsckobjects = true
 
 [interactive]
   diffFilter = delta --color-only
@@ -35,6 +42,7 @@
   prune = true
   pruneTags = true
   all = true
+  fsckobjects = true
 
 [merge]
 	conflictstyle = zdiff3
