@@ -36,7 +36,6 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
-
 # rust
 source "$HOME/.cargo/env"
 
