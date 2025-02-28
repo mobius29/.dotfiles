@@ -1,7 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "th-ch/youtube-music"
+brew "bat"
 brew "glib"
 brew "harfbuzz"
 brew "librsvg"
@@ -12,15 +12,14 @@ brew "fnm"
 brew "fzf"
 brew "gh"
 brew "git"
+brew "git-delta"
 brew "git-lfs"
 brew "imagemagick"
 brew "lazygit"
 brew "libpq"
 brew "llvm"
 brew "lua"
-brew "mas"
 brew "mkcert"
-brew "neofetch"
 brew "neovim"
 brew "nss"
 brew "openjdk"
@@ -37,25 +36,9 @@ cask "font-d2coding"
 cask "font-d2coding-nerd-font"
 cask "heynote"
 cask "karabiner-elements"
-cask "keyboard-cleaner"
-cask "microsoft-edge"
-cask "naver-whale"
-cask "ngrok"
 cask "notion-calendar"
 cask "raycast"
 cask "rectangle"
 cask "shottr"
 cask "stats"
 cask "warp"
-cask "youtube-music"
-cask "zed"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "RunCat", id: 1429033973
-mas "Xcode", id: 497799835
-mas "카카오톡", id: 869223134
