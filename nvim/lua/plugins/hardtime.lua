@@ -8,4 +8,5 @@ return {
     disable_mouse = false,
     restriction_mode = "hint",
   },
+  enabled = false,
 }

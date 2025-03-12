@@ -13,6 +13,9 @@ alias cmcpp="g++ main.cpp -o main --std=c++17"
 
 alias lg="lazygit"
 
+# git
+alias gmoc='git merge origin/$(git_current_branch)'
+
 # exa
 alias els='exa -l'
 alias ela='exa -la'
